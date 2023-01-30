@@ -1,0 +1,15 @@
+
+RewriteEngine on
+
+
+<FilesMatch "\.(jpeg|jpg|png|gif|swf|svg)$">
+    Header set Cache-Control "max-age=604800, public"
+</FilesMatch>
+
+ErrorDocument 404 /crm_pharmalister/404.php
+
+RewriteCond %{REQUEST_URI} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+
+

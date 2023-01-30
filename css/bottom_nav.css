@@ -1,0 +1,43 @@
+body {
+    margin: 0 0 55px 0;
+}
+
+.navB {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    background-color: #fff;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+}
+
+.nav-linkB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    min-width: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #444444;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color 0.1s ease-in-out;
+    margin: 0px;
+}
+
+.nav-linkB:hover{
+    color: rgb(96, 148, 0);
+    text-decoration: none;
+    font-weight:700;
+}
+
+.link-activeB {
+    color: rgb(96, 148, 0);
+    font-weight: bolder;
+}
